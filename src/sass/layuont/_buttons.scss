@@ -1,0 +1,14 @@
+%button-big {
+  display: block;
+  width: px-to-rem(226px);
+  padding: px-to-rem(20px) 0;
+  @include font($font-family-text, px-to-rem(14px), 1, #fff);
+  background-color: $red-color;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  text-align: center;
+  &:hover {
+    background-color: transparent;
+    border-color: #fff;
+  }
+}

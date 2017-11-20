@@ -1,0 +1,63 @@
+.page-header {
+  @include background-img ($url: './img/header/header.jpg');
+  background-position: center;
+}
+
+//Menu
+.header-menu {
+  @include flex();
+  padding-top: px-to-rem(54px);
+  padding-left: 35%;
+  list-style: none;
+}
+
+.header-item {
+  padding-bottom: px-to-rem(21px);
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-bottom-color: #de4b3c;
+  }
+}
+
+.header-link {
+  @include font($font-family-text, px-to-rem(14px), 1.5, $main-color-text);
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    color: $red-color;
+  }
+}
+
+//Promo article
+.header-article {
+  @include flex($wrap: wrap, $jc: center);
+  padding: px-to-rem(225px) px-to-rem(190px) px-to-rem(260px);
+}
+
+.header-slogan {
+  @include font($font-family-text, px-to-rem(24px), 1.5, $main-color-text);
+}
+
+.header-title {
+  @include font($font-family-text, px-to-rem(72px), 2, $main-color-text);
+  text-transform: uppercase;
+}
+
+.header-design {
+  width: 16.24%;
+  margin-bottom: px-to-rem(48px);
+}
+
+.header-lead {
+  margin-bottom: px-to-rem(60px);
+  @include font($font-family-text, px-to-rem(14px), 1.5, #cbc6c0);
+  text-align: center;
+}
+
+.header-button {
+  @extend %button-big;
+  display: inline-block;
+  &:first-of-type {
+    margin-right: px-to-rem(30px);
+  }
+}

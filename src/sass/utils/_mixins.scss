@@ -1,0 +1,19 @@
+@mixin flex($wrap:nowrap, $jc:space-between, $ai: center){
+  display: flex;
+  flex-wrap: $wrap;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin font($ffamily: $font-family-text, $fsize: $base-font-size, $line-h: 1.5, $fcolor: $main-color-text){
+  font-family: $ffamily;
+  font-size: $fsize;
+  line-height: $line-h;
+  color: $fcolor;
+}
+
+@mixin background-img($url, $bgs: cover, $bgr: no-repeat){
+  background-image: url($url);
+  background-size: $bgs;
+  background-repeat: $bgr;
+}
