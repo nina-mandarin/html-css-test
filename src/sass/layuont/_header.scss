@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   @include background-img ($url: './img/header/header.jpg');
   background-position: center;
 }
@@ -60,4 +61,18 @@
   &:first-of-type {
     margin-right: px-to-rem(30px);
   }
+}
+
+//header-icon
+.header-icon {
+  position: absolute;
+  top: 97%;
+  left: 47%;
+  display: block;
+}
+
+.icon-anchor {
+  width: px-to-rem(66px);
+  border: 4px solid #53514f;
+  border-radius: 50%;
 }
