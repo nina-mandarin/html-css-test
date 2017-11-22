@@ -1,0 +1,51 @@
+.page-who {
+  padding: px-to-rem(124px) 0 px-to-rem(104px);
+}
+
+.visit-card {
+  @include flex();
+  flex-direction: column;
+}
+
+.card-icon {
+  width: px-to-rem(72px);
+  height: px-to-rem(72px);
+  padding-top: px-to-rem(20px);
+  border: 1px solid #e5e5e5;
+  margin-bottom: px-to-rem(30px);
+  text-align: center;
+  &:hover {
+    border-color: #e74c3c;
+    transform: rotate(45deg);
+  }
+  &:hover + .card-title {
+    color: $red-color;
+  }
+  &:hover>.card-svg {
+    transform: rotate(-45deg);
+  }
+}
+
+.card-svg {
+  width: px-to-rem(28px);
+  height: px-to-rem(28px);
+  fill: #e74c3c;
+}
+
+.card-title {
+  @include font($font-family-text, px-to-rem(18px), 2, #6a6a6a);
+  text-transform: uppercase;
+}
+
+.card-hor {
+  width: 20%;
+  margin-top: px-to-rem(9px);
+  margin-bottom: px-to-rem(18px);
+  size: px-to-rem(2px);
+  color: #888;
+}
+
+.card-text {
+  @include font($fsize: px-to-rem(12px), $fcolor: #999);
+  text-align: center;
+}
