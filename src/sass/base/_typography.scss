@@ -1,0 +1,4 @@
+h2 {
+  @include font($font-family-text, px-to-rem(36px), 1, $title-color-text);
+  text-transform: uppercase;
+}

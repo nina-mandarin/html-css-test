@@ -15,7 +15,7 @@
   margin-bottom: px-to-rem(30px);
   text-align: center;
   &:hover {
-    border-color: #e74c3c;
+    border-color: $red-color;
     transform: rotate(45deg);
   }
   &:hover + .card-title {
@@ -33,7 +33,7 @@
 }
 
 .card-title {
-  @include font($font-family-text, px-to-rem(18px), 2, #6a6a6a);
+  @include font($font-family-text, px-to-rem(18px), 2, $title-color-text);
   text-transform: uppercase;
 }
 
@@ -46,6 +46,6 @@
 }
 
 .card-text {
-  @include font($fsize: px-to-rem(12px), $fcolor: #999);
+  @include font($fsize: px-to-rem(12px), $fcolor: $grey-color);
   text-align: center;
 }

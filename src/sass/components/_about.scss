@@ -1,0 +1,30 @@
+.about {
+  @include flex($ai: flex-start);
+  padding: px-to-rem(144px) 0;
+}
+
+.about-img {
+  flex-basis: 44%;
+}
+
+.about-article {
+  flex-basis: 51%;
+}
+
+.about-title {
+  margin-bottom: px-to-rem(42px);
+  padding-left: px-to-rem(28px);
+  border-left: 5px solid $red-color;
+}
+
+.about-text {
+  @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
+  margin-bottom: px-to-rem(26px);
+  &:last-of-type {
+    margin-bottom: px-to-rem(40px);
+  }
+}
+
+.about-btn {
+  @extend %button-big;
+}

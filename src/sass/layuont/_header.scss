@@ -55,12 +55,18 @@
   text-align: center;
 }
 
-.header-button {
+//buttons
+.btn-red {
   @extend %button-big;
   display: inline-block;
-  &:first-of-type {
-    margin-right: px-to-rem(30px);
-  }
+  margin-right: px-to-rem(30px);
+}
+
+.btn-transparent {
+  @extend %button-big;
+  display: inline-block;
+  background-color: transparent;
+  border-color: #fff;
 }
 
 //header-icon
