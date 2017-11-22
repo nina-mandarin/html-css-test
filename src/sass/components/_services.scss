@@ -1,0 +1,60 @@
+.page-services {
+  padding: px-to-rem(154px) 0 px-to-rem(128px);
+  @include background-img($url: './img/services/background.jpg');
+  background-position: center;
+}
+
+.services-title {
+  margin-bottom: px-to-rem(72px);
+  padding-right: px-to-rem(30px);
+  border-right: 5px solid $red-color;
+  text-align: right;
+  color: #f4f5f9;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: right;
+  &:nth-of-type(n+2) {
+    margin-top: px-to-rem(52px);
+  }
+}
+
+.services-subtitle {
+  display: block;
+  @include font($font-family-text, px-to-rem(18px), 1, $red-color);
+  text-transform: uppercase;
+}
+
+.services-text {
+  @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
+}
+
+//icons
+.services-icons {
+  padding-top: px-to-rem(110px);
+  padding-left: px-to-rem(30px);
+}
+
+.services-icon {
+  display: block;
+  width: px-to-rem(66px);
+  height: px-to-rem(66px);
+  padding-top: px-to-rem(14px);
+  border: 4px solid #53514f;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  &:nth-of-type(n+2) {
+    margin-top: px-to-rem(62px);
+  }
+}
+
+.serv-icon {
+  width: px-to-rem(30px);
+  height: px-to-rem(30px);
+  fill: $red-color;
+}
