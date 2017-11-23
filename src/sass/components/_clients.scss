@@ -1,0 +1,40 @@
+.page-clients {
+  padding: px-to-rem(148px) 0 px-to-rem(144px);
+  background-color: #f4f5f9;
+}
+
+.clients {
+  @include flex();
+  flex-direction: column;
+}
+
+.clients-title {
+  margin-bottom: px-to-rem(32px);
+}
+
+.clients-text {
+  margin-bottom: px-to-rem(32px);
+  @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
+}
+
+.clients-img {
+  width: px-to-rem(190px);
+  margin-bottom: px-to-rem(68px);
+}
+
+.gallery-logo {
+  @include flex($wrap: wrap);
+}
+
+.clients-logo {
+  display: block;
+}
+
+.client-logo {
+  width: px-to-rem(208px);
+  height: px-to-rem(102px);
+  filter: opacity(0.4);
+  &:hover {
+    filter: opacity(1);
+  }
+}
