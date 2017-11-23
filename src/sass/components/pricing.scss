@@ -1,0 +1,86 @@
+.pricing {
+  @include flex;
+  flex-direction: column;
+  padding: px-to-rem(150px) 0 px-to-rem(130px);
+}
+
+.pricing-title {
+  margin-bottom: px-to-rem(27px);
+}
+
+.pricing-text {
+  margin-bottom: px-to-rem(27px);
+  @include font($font-family-text, px-to-rem(14px), 1.5, $grey-color);
+}
+
+.pricing-img {
+  width: px-to-rem(190px);
+  margin-bottom: px-to-rem(67px);
+}
+
+//Packages
+.packages {
+  @include flex($ai: flex-start);
+  width: 100%;
+}
+
+.package {
+  position: relative;
+  flex-basis: 30%;
+  @include flex();
+  flex-direction: column;
+  padding-bottom: px-to-rem(48px);
+  background-color: #f4f5f9;
+}
+
+.package-title {
+  width: 100%;
+  margin-bottom: px-to-rem(126px);
+  padding: px-to-rem(54px) 0 px-to-rem(140px);
+  @include font($font-family-text, px-to-rem(24px), 1.5, #fff);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $grey-color;
+}
+
+.package-price {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50% 0);
+  width: px-to-rem(158px);
+  height: px-to-rem(158px);
+  padding: px-to-rem(48px) 0;
+  border-radius: 100%;
+  @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 -8px rgba(83,81,79,.3);
+}
+
+.price {
+  display: block;
+  @include font($font-family-text, px-to-rem(40px), 1, $grey-color);
+  font-weight: 700;
+}
+
+.package-text {
+  margin-bottom: px-to-rem(30px);
+  @include font($font-family-text, px-to-rem(14px), 1.5, $grey-color);
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.package-btn {
+  margin-top: px-to-rem(50px);
+  @extend %button-small;
+}
+
+.color-red {
+  color: $red-color;
+}
+
+.bgc-red {
+  background-color: $red-color;
+}
