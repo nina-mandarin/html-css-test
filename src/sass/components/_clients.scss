@@ -28,6 +28,10 @@
 
 .clients-logo {
   display: block;
+  background-color: #fff;
+  &:nth-of-type(-n+5) {
+    margin-bottom: px-to-rem(32px);
+  }
 }
 
 .client-logo {
