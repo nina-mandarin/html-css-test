@@ -1,0 +1,84 @@
+.page-contact {
+  background-color: #f4f5f9;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: px-to-rem(144px) 0 px-to-rem(156px);
+}
+
+.contact-title {
+  margin-bottom: px-to-rem(32px);
+}
+
+.contact-text {
+  margin-bottom: px-to-rem(32px);
+  @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
+}
+
+.contact-img {
+  width: px-to-rem(190px);
+  margin-bottom: px-to-rem(68px);
+}
+
+.contacts {
+  @include flex($ai: stretch);
+  width: 100%;
+}
+
+//Address
+.contact-address {
+  flex-basis: 41%;
+  padding: px-to-rem(90px) px-to-rem(160px) px-to-rem(94px) px-to-rem(80px);
+  background-color: #fff;
+  box-shadow: 0 4px 0 rgba(225, 226, 229, 0.3);
+}
+
+.address {
+  margin-bottom: px-to-rem(68px);
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.address-title {
+  margin-bottom: px-to-rem(32px);
+  @include font($font-family-text, px-to-rem(24px), 1.5, $red-color);
+  text-transform: uppercase;
+}
+
+.address-text {
+  @include font($font-family-text, px-to-rem(18px), 1.5, $grey-color);
+}
+
+//Feedback
+.contact-feedback {
+  flex-basis: 57%;
+  padding: px-to-rem(96px) px-to-rem(96px) px-to-rem(104px);
+  background-color: #fff;
+  box-shadow: 0 4px 0 rgba(225, 226, 229, 0.3);
+}
+
+.form-item {
+  width: 100%;
+  margin-bottom: px-to-rem(27px);
+  @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
+  border: 1px solid transparent;
+  border-bottom-color: #e5e5e5;
+}
+
+.form-area {
+  width: 100%;
+  margin-bottom: px-to-rem(24px);
+  resize: none;
+  @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
+  border: 1px solid transparent;
+  border-bottom-color: #e5e5e5;
+}
+
+.feedback-btn {
+  @extend %button-small;
+  background-color: $red-color;
+}
