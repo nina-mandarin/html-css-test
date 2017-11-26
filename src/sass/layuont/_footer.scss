@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: #202020;
+}
+
+.footer {
+  @include flex();
+  padding: px-to-rem(32px) 0;
+}
+
+.footer-icon {
+  display: inline-block;
+  margin-right: px-to-rem(18px);
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.social-icon {
+  width: px-to-rem(22px);
+  height: px-to-rem(22px);
+  fill: #787878;
+  &:hover {
+    fill: $red-color;
+  }
+}
+
+.footer-signature {
+  @include font($font-family-text, px-to-rem(14px), 1.5, #787878);
+}
