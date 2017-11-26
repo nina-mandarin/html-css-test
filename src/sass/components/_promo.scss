@@ -1,0 +1,25 @@
+.page-promo {
+  @include background-img ('img/promo/background.jpg');
+  background-position: center;
+}
+
+.promo {
+  @include flex();
+  flex-direction: column;
+  padding: px-to-rem(144px) 0 px-to-rem(126px);
+}
+
+.promo-title {
+  margin-bottom: px-to-rem(27px);
+  text-transform: none;
+  color: #fff;
+}
+
+.promo-text {
+  margin-bottom: px-to-rem(60px);
+  @include font($font-family-text, px-to-rem(14px), 1, #fff);
+}
+
+.promo-btn {
+  @extend %button-big;
+}
