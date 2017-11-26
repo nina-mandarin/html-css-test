@@ -12,20 +12,16 @@
   list-style: none;
 }
 
-.header-item {
-  padding-bottom: px-to-rem(21px);
-  border-bottom: 1px solid transparent;
-  &:hover {
-    border-bottom-color: #de4b3c;
-  }
-}
-
 .header-link {
+  display: block;
+  padding-bottom: px-to-rem(21px);
   @include font($font-family-text, px-to-rem(14px), 1.5, $main-color-text);
   text-decoration: none;
   text-transform: uppercase;
+  border-bottom: 1px solid transparent;
   &:hover {
     color: $red-color;
+    border-bottom-color: #de4b3c;
   }
 }
 
