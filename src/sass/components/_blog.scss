@@ -1,0 +1,97 @@
+.blog {
+  @include flex();
+  flex-direction: column;
+  padding-top: px-to-rem(120px);
+}
+
+.blog-title {
+  margin-bottom: px-to-rem(32px);
+}
+
+.blog-text {
+  margin-bottom: px-to-rem(32px);
+  @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
+  text-align: center;
+}
+
+.blog-design {
+  width: px-to-rem(190px);
+  margin-bottom: px-to-rem(68px);
+}
+
+//Blog article
+.gallery-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-card {
+  flex-basis: 50%;
+  display: flex;
+  background-color: $red-color;
+  &:hover>.blog-article {
+    display: block;
+  }
+}
+
+.card-one {
+  &:hover>.blog-img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 43%, 93% 50%, 100% 57%, 100% 100%, 0% 100%);
+  }
+}
+
+.card-two {
+  &:hover>.blog-img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 43%, 93% 50%, 100% 57%, 100% 100%, 0% 100%);
+  }
+}
+
+.card-three {
+  &:hover>.blog-img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 57%, 7% 50%, 0% 43%);
+  }
+}
+
+.card-four {
+  &:hover>.blog-img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 57%, 7% 50%, 0% 43%);
+  }
+}
+
+.blog-article {
+  display: block;
+  padding: px-to-rem(66px) px-to-rem(58px) px-to-rem(72px) px-to-rem(47px);
+}
+
+.blogart-desk {
+  margin-bottom: px-to-rem(30px);
+  @include font($font-family-text, px-to-rem(14px), 1.5, #fff);
+}
+
+.blogart-title {
+  margin-bottom: px-to-rem(18px);
+  @include font($font-family-text, px-to-rem(24px), 1.5, #fff);
+  text-transform: uppercase;
+}
+
+.blog-hor {
+  width: 14%;
+  height: px-to-rem(4px);
+  margin-bottom: px-to-rem(38px);
+  background-color: #fff;
+}
+
+.blogart-text {
+  margin-bottom: px-to-rem(42px);
+  @include font($font-family-text, px-to-rem(16px), 2, #fff);
+  max-height: calc(1rem * 2 * 5);
+  overflow: hidden;
+}
+
+.blogart-link {
+  @include font($font-family-text, px-to-rem(18px), 1.5, #fff);
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: none;
+}

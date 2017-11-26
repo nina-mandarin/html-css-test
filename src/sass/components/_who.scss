@@ -39,10 +39,10 @@
 
 .card-hor {
   width: 20%;
+  height: px-to-rem(1px);
   margin-top: px-to-rem(9px);
   margin-bottom: px-to-rem(18px);
-  size: px-to-rem(2px);
-  color: #888;
+  background-color: #888;
 }
 
 .card-text {
