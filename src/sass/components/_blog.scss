@@ -23,25 +23,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  &:hover>.blog-card {
-    flex-basis: 50%;
-  }
+}
+
+.blog-img {
+  flex-basis: 50%;
 }
 
 .blog-card {
-  flex-basis: 40%;
+  flex-basis: 50%;
   display: flex;
   background-color: $red-color;
-  &:hover>.blog-article {
-    display: block;
-  }
-  &:hover>.blog-img {
-    width: 50%;
-  }
 }
 
 .blog-article {
-  display: none;
+  flex-basis: 50%;
   padding: px-to-rem(66px) px-to-rem(58px) px-to-rem(72px) px-to-rem(47px);
 }
 
@@ -66,7 +61,7 @@
 .blogart-text {
   margin-bottom: px-to-rem(42px);
   @include font($font-family-text, px-to-rem(16px), 2, #fff);
-  max-height: calc(1rem * 2 * 8);
+  max-height: calc(1rem * 2 * 5);
   overflow: hidden;
 }
 
@@ -79,25 +74,25 @@
 
 //hover card
 .card-one {
-  &:hover>.blog-img {
+  &>.blog-img {
     clip-path: polygon(0% 0%, 100% 0%, 100% 43%, 93% 50%, 100% 57%, 100% 100%, 0% 100%);
   }
 }
 
 .card-two {
-  &:hover>.blog-img {
+  &>.blog-img {
     clip-path: polygon(0% 0%, 100% 0%, 100% 43%, 93% 50%, 100% 57%, 100% 100%, 0% 100%);
   }
 }
 
 .card-three {
-  &:hover>.blog-img {
+  &>.blog-img {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 57%, 7% 50%, 0% 43%);
   }
 }
 
 .card-four {
-  &:hover>.blog-img {
+  &>.blog-img {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 57%, 7% 50%, 0% 43%);
   }
 }
