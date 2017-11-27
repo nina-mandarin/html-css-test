@@ -9,3 +9,8 @@ img {
   width: 100%;
   height: auto;
 }
+
+.container {
+  width: px-to-rem(1170px);
+  margin: auto;
+}

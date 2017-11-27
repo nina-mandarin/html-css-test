@@ -1,8 +1,10 @@
 .page-who {
+  @include flex();
   padding: px-to-rem(124px) 0 px-to-rem(104px);
 }
 
 .visit-card {
+  flex-basis: 22%;
   @include flex();
   flex-direction: column;
 }

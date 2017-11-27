@@ -4,7 +4,12 @@
   background-position: center;
 }
 
+.services {
+  width: 59%;
+}
+
 .services-title {
+  margin-right: 17%;
   margin-bottom: px-to-rem(72px);
   padding-right: px-to-rem(30px);
   border-right: 5px solid $red-color;
@@ -17,6 +22,8 @@
 }
 
 .services-item {
+  display: flex;
+  justify-content: space-between;
   text-align: right;
   &:nth-of-type(n+2) {
     margin-top: px-to-rem(52px);
@@ -30,15 +37,11 @@
 }
 
 .services-text {
+  flex-basis: 83%;
   @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
 }
 
 //icons
-.services-icons {
-  padding-top: px-to-rem(110px);
-  padding-left: px-to-rem(30px);
-}
-
 .services-icon {
   display: block;
   width: px-to-rem(66px);
