@@ -5,7 +5,7 @@
 }
 
 .services {
-  width: 59%;
+  width: 60.8%;
 }
 
 .services-title {
@@ -18,21 +18,25 @@
 }
 
 .services-list {
+  padding: 0 px-to-rem(15px);
   list-style: none;
 }
 
 .services-item {
-  display: flex;
-  justify-content: space-between;
+  @include flex();
   text-align: right;
   &:nth-of-type(n+2) {
     margin-top: px-to-rem(52px);
   }
 }
 
+.services-article {
+  flex-basis: 81%;
+}
+
 .services-subtitle {
   display: block;
-  @include font($font-family-text, px-to-rem(18px), 1, $red-color);
+  @include font($font-family-text, px-to-rem(18px), 1.5, $red-color);
   text-transform: uppercase;
 }
 

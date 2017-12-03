@@ -1,0 +1,31 @@
+%design-line {
+  position: relative;
+  width: px-to-rem(8px);
+  height: px-to-rem(8px);
+  margin: 0 auto;
+  margin-bottom: px-to-rem(48px);
+  border-radius: 50%;
+  background-color: $red-color;
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-120%, 50%);
+    width: px-to-rem(80px);
+    height: px-to-rem(2px);
+    background-color: $grey-color;
+  }
+  &::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(30%, 50%);
+    width: px-to-rem(80px);
+    height: px-to-rem(2px);
+    background-color: $grey-color;
+  }
+}

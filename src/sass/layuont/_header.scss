@@ -5,11 +5,20 @@
 }
 
 //Menu
-.header-menu {
-  @include flex();
+.header {
   padding-top: px-to-rem(54px);
-  padding-left: 35%;
+}
+
+.header-menu {
+  @include flex($jc: flex-end);
   list-style: none;
+}
+
+.header-item {
+  margin-right: px-to-rem(58px);
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .header-link {
@@ -27,7 +36,7 @@
 
 //Promo article
 .header-article {
-  @include flex($wrap: wrap, $jc: center);
+  @include flex($wrap:wrap, $jc: center);
   padding: px-to-rem(225px) px-to-rem(190px) px-to-rem(260px);
 }
 
@@ -36,13 +45,41 @@
 }
 
 .header-title {
+  flex-basis: 100%;
   @include font($font-family-text, px-to-rem(72px), 2, $main-color-text);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .header-design {
-  width: px-to-rem(190px);
+  position: relative;
+  width: px-to-rem(8px);
+  height: px-to-rem(8px);
   margin-bottom: px-to-rem(48px);
+  border-radius: 50%;
+  background-color: $red-color;
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-120%, 50%);
+    width: px-to-rem(80px);
+    height: px-to-rem(2px);
+    background-color: #fff;
+  }
+  &::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(30%, 50%);
+    width: px-to-rem(80px);
+    height: px-to-rem(2px);
+    background-color: #fff;
+  }
 }
 
 .header-lead {
@@ -52,24 +89,21 @@
 }
 
 //buttons
-.btn-red {
+.header-btn {
   @extend %button-big;
   display: inline-block;
   margin-right: px-to-rem(30px);
-}
-
-.btn-transparent {
-  @extend %button-big;
-  display: inline-block;
-  background-color: transparent;
-  border-color: #fff;
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 //header-icon
 .header-icon {
   position: absolute;
   top: 97%;
-  left: 47%;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
 }
 

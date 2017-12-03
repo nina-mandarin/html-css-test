@@ -37,17 +37,18 @@
 .card-title {
   @include font($font-family-text, px-to-rem(18px), 2, $title-color-text);
   text-transform: uppercase;
-}
-
-.card-hor {
-  width: 20%;
-  height: px-to-rem(1px);
-  margin-top: px-to-rem(9px);
-  margin-bottom: px-to-rem(18px);
-  background-color: #888;
+  &::after {
+    display: block;
+    content: '';
+    width: px-to-rem(40px);
+    height: px-to-rem(1px);
+    margin: 0 auto;
+    background-color: #888;
+  }
 }
 
 .card-text {
+  margin-top: px-to-rem(16px);
   @include font($fsize: px-to-rem(12px), $fcolor: $grey-color);
   text-align: center;
 }

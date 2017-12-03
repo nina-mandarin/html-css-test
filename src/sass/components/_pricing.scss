@@ -1,7 +1,13 @@
 .pricing {
-  @include flex;
-  flex-direction: column;
+  position: relative;
   padding: px-to-rem(150px) 0 px-to-rem(130px);
+}
+
+//header
+.pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pricing-title {
@@ -13,9 +19,8 @@
   @include font($font-family-text, px-to-rem(14px), 1.5, $grey-color);
 }
 
-.pricing-img {
-  width: px-to-rem(190px);
-  margin-bottom: px-to-rem(67px);
+.pricing-design {
+  @extend %design-line;
 }
 
 //Packages
@@ -73,9 +78,14 @@
   font-weight: 700;
 }
 
-.package-text {
+.package-list {
+  list-style: none;
+}
+
+.package-item {
   margin-bottom: px-to-rem(30px);
   @include font($font-family-text, px-to-rem(14px), 1.5, $grey-color);
+  text-align: center;
   &:last-of-type {
     margin-bottom: 0;
   }

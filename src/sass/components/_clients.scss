@@ -17,9 +17,8 @@
   @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
 }
 
-.clients-img {
-  width: px-to-rem(190px);
-  margin-bottom: px-to-rem(68px);
+.clients-design {
+  @extend %design-line;
 }
 
 .gallery-logo {

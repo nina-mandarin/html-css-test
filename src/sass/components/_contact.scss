@@ -18,9 +18,8 @@
   @include font($font-family-text, px-to-rem(14px), 2, $grey-color);
 }
 
-.contact-img {
-  width: px-to-rem(190px);
-  margin-bottom: px-to-rem(68px);
+.contact-design {
+  @extend %design-line;
 }
 
 .contacts {

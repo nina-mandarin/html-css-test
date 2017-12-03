@@ -14,8 +14,7 @@
 }
 
 .blog-design {
-  width: px-to-rem(190px);
-  margin-bottom: px-to-rem(68px);
+  @extend %design-line;
 }
 
 //Blog article

@@ -27,4 +27,6 @@
 
 .about-btn {
   @extend %button-big;
+  background-color: $red-color;
+  border-color: transparent;
 }
